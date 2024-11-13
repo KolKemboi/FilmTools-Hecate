@@ -1,5 +1,9 @@
 <h1 align="center" id="title">FILM TOOLS HECATE</h1>
 
+<h3 align="center" id="title">Hecate</h3>
+
+![image alt](https://github.com/KolKemboi/FilmTools-Hecate/blob/2286f864bbd14d361d364659cf2e04f80c6747b8/logo.png)
+
 <p id="description">This project aims to build a powerful suite of AI-powered computer vision-based tools for filmmaking designed to streamline and enhance creative workflows in digital production. Utilizing lightweight efficient models for each tool this proof-of-concept allows filmmakers and content creators to access high-quality automation without the need for extensive computing resources. Here’s a look at some of the innovative tools in development:</p>
 
   
