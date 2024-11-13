@@ -34,4 +34,3 @@ Technologies used in the project:
 <h2> License:</h2>
 
 This project is licensed under the Apache 2.0
-README GEN
