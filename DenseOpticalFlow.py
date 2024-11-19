@@ -3,11 +3,26 @@ import cv2
 import time
 
 def draw_flow(img, flow, steps = 16):
-    pass
+    h, w = img.shape[:2]
+    y, x = np.mgrid[steps//2:h:steps, steps//2:w:steps].reshape(2, -1).astype(int)
+    fx, fy = flow[y, x].T
+
+    lines = np.vstack([x, y, x-fx, y-fy]).T.reshape(-1, 2, 2)
+    lines = np.int32(lines + 0.5)
+
+    img_bgr = cv2.cvtColor(img, cv2.COLOR_GRAY2BGR)
+   ### flat = np.ones((img.shape[0], img.shape[1])) * 255
+
+    cv2.polylines(img_bgr, lines, 0, (0, 255, 0))
+    
+
+    for (x1, y1), (_x2, _y2) in lines:
+        cv2.circle(img_bgr, (x1, y1), 1, (0, 255, 0), -1)
+        ##cv2.circle(flat, (x1, y1), 1, (0, 255, 0), -1)
+
+    return img_bgr
 
 
-def draw_hsv(flow):
-    pass
 
 
 def main(filename: str):
@@ -34,10 +49,9 @@ def main(filename: str):
         prev_gray = gray
 
         flow = draw_flow(gray, flow)
-        hsv = draw_hsv(flow)
 
         cv2.imshow("Optical Flow Vectors", flow)
-        cv2.imshow("Optical Flow HSV", hsv)
+        ##cv2.imshow("Optical Flow Vectors", flat)
 
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
@@ -46,6 +60,6 @@ def main(filename: str):
     cv2.destroyAllWindows()
 
 if __name__ == "__main__":
-    main()
+    main("Sample Video.mp4")
 
     
