@@ -12,30 +12,29 @@
 
 Here're some of the project's best features:
 
-*   Automated Rotoscoping
-*   Depth Map Generation:
-*   Object and Motion Tracking
+<h3 align="center" id="title">Automated Rotoscoping</h3>
+<h3 align="center" id="title">Depth Map Generation</h3>
+<h3 align="center" id="title">Depth Map Generation</h3>
 
 ![image alt](https://github.com/KolKemboi/FilmTools-Hecate/blob/3fed9da4fae61877f2e51dff47f3a9170be04d52/hecate-object-tracking.png)
 
-*   Optical Flow
+<h3 align="center" id="title">Optical Flow</h3>   
 
-basic optical flow
+* basic optical flow
 
 ![image alt](https://github.com/KolKemboi/FilmTools-Hecate/blob/3fed9da4fae61877f2e51dff47f3a9170be04d52/hecate-basic-optical-flow.png)
 
-dense optical flow
+* dense optical flow
 
 ![image alt](https://github.com/KolKemboi/FilmTools-Hecate/blob/3fed9da4fae61877f2e51dff47f3a9170be04d52/hecate-dense-optical-flow.png)
 
-*   Style Transfer
-*   Face Swapping and Deepfake
-*   Automated Color Grading
-*   Real-time Background
-*   Lip Sync and Speech Animation
-*   Object Removal and Inpainting
+<h3 align="center" id="title">Style Transfer</h3>   
+<h3 align="center" id="title">Face Swapping and Deepfake</h3>   
+<h3 align="center" id="title">Automated Color Grading</h3>   
+<h3 align="center" id="title">Real-time Background</h3>   
+<h3 align="center" id="title">Lip Sync and Speech Animation</h3>   
+<h3 align="center" id="title">Object Removal and Inpainting</h3>   
 
-  
   
 <h2> Built with</h2>
 
