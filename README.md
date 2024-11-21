@@ -15,7 +15,19 @@ Here're some of the project's best features:
 *   Automated Rotoscoping
 *   Depth Map Generation:
 *   Object and Motion Tracking
+
+![image alt](https://github.com/KolKemboi/FilmTools-Hecate/blob/3fed9da4fae61877f2e51dff47f3a9170be04d52/hecate-object-tracking.png)
+
 *   Optical Flow
+
+basic optical flow
+
+![image alt](https://github.com/KolKemboi/FilmTools-Hecate/blob/3fed9da4fae61877f2e51dff47f3a9170be04d52/hecate-basic-optical-flow.png)
+
+dense optical flow
+
+![image alt](https://github.com/KolKemboi/FilmTools-Hecate/blob/3fed9da4fae61877f2e51dff47f3a9170be04d52/hecate-dense-optical-flow.png)
+
 *   Style Transfer
 *   Face Swapping and Deepfake
 *   Automated Color Grading
