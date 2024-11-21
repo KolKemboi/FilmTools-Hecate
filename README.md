@@ -17,7 +17,6 @@ Here're some of the project's best features:
 ![image alt](https://github.com/KolKemboi/FilmTools-Hecate/blob/8a091bfaf6d21cd7cbccbf7575937c7beeb22db8/hecate-basic-rotoscoping-tool.png)
 
 <h3 align="center" id="title">Depth Map Generation</h3>
-<h3 align="center" id="title">Depth Map Generation</h3>
 
 ![image alt](https://github.com/KolKemboi/FilmTools-Hecate/blob/3fed9da4fae61877f2e51dff47f3a9170be04d52/hecate-object-tracking.png)
 
