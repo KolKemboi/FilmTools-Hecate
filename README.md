@@ -13,6 +13,9 @@
 Here're some of the project's best features:
 
 <h3 align="center" id="title">Automated Rotoscoping</h3>
+
+![image alt](https://github.com/KolKemboi/FilmTools-Hecate/blob/8a091bfaf6d21cd7cbccbf7575937c7beeb22db8/hecate-basic-rotoscoping-tool.png)
+
 <h3 align="center" id="title">Depth Map Generation</h3>
 <h3 align="center" id="title">Depth Map Generation</h3>
 
