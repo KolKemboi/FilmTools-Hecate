@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 import time
 
-def draw_flow(img, flow, steps = 16):
+def draw_flow(rgb_img ,img, flow, steps = 16):
     h, w = img.shape[:2]
     y, x = np.mgrid[steps//2:h:steps, steps//2:w:steps].reshape(2, -1).astype(int)
     fx, fy = flow[y, x].T
@@ -17,7 +17,7 @@ def draw_flow(img, flow, steps = 16):
     
 
     for (x1, y1), (_x2, _y2) in lines:
-        cv2.circle(img_bgr, (x1, y1), 1, (0, 255, 0), -1)
+        cv2.circle(rgb_img, (x1, y1), 1, (0, 255, 0), -1)
         ##cv2.circle(flat, (x1, y1), 1, (0, 255, 0), -1)
 
     return img_bgr
@@ -48,11 +48,11 @@ def main(filename: str):
 
         prev_gray = gray
 
-        flow = draw_flow(gray, flow)
+        flow = draw_flow(frame, gray, flow)
 
         cv2.imshow("Optical Flow Vectors", flow)
         ##cv2.imshow("Optical Flow Vectors", flat)
-
+        ##time.sleep(1)
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
 

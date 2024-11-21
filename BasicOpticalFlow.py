@@ -1,5 +1,6 @@
 import cv2
 import numpy as np
+import time
 
 def calculate_optical_flow(prev_gray, next_gray, prev_pts):
     next_pts, status, err = cv2.calcOpticalFlowPyrLK(prev_gray, next_gray, prev_pts, None)
@@ -49,7 +50,7 @@ while True:
 
     img = cv2.add(next_frame, mask)
     cv2.imshow("Optical Flow", img)
-
+    time.sleep(1)
     prev_gray = next_gray.copy()
     prev_pts = good_new.reshape(-1, 1, 2)
 
